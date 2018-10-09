@@ -3,11 +3,17 @@
 
 typedef struct nodo{
     int linha;
-    int pos_linha;
+    int quant;
     struct nodo *prox;
 }No;
 
-No *cria_no();
+typedef struct palavra{
+    struct nodo *prox;
+}Palavra;
 
+No *cria_no();
+No *add(Palavra *p, No *l, int x, int y);
+Palavra *cria_palavra();
+void imprimir(Palavra *p, No *l, int x, int y);
 
 #endif // LISTA_H_
