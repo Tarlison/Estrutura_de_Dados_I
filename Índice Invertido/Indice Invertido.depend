@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1539120068 source:c:\users\tarlison sander\documents\3º semestre\estrutura de dados i\estrutura_de_dados_i\Índice invertido\lista.c
+	"lista.h"
+	<stdio.h>
+	<stdlib.h>
+
+1539119174 c:\users\tarlison sander\documents\3º semestre\estrutura de dados i\estrutura_de_dados_i\Índice invertido\lista.h
+
+1539120468 source:c:\users\tarlison sander\documents\3º semestre\estrutura de dados i\estrutura_de_dados_i\Índice invertido\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
