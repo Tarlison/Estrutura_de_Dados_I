@@ -2,18 +2,18 @@
 #define LISTA_H_
 
 typedef struct nodo{
-    int linha;
-    int quant;
+    char palavra[500]; //uma palavra fica aqui
+    int indices[500]; //aqui fica as linhas e o numero de vezes que se repetiu em cada linha
     struct nodo *prox;
 }No;
 
-typedef struct palavra{
-    struct nodo *prox;
-}Palavra;
+
 
 No *cria_no();
-No *add(Palavra *p, No *l, int x, int y);
-Palavra *cria_palavra();
-void imprimir(Palavra *p, No *l, int x, int y);
+No *adicionarNoNodo(No *n,char *ch, int linha);
+
+
 
 #endif // LISTA_H_
+
+printf("%d | %d",indice,x[indice]);

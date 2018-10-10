@@ -2,27 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lista.h"
+
+
 int main(){
     FILE *arquivo;
-    int c,auxC = 0;
     arquivo = fopen("teste.txt.txt","r");
+    char c;
+    char str[100];
+    int i = 0;
     if (arquivo == NULL){
         printf("Houve um erro ao tentar abrir o arquivo.\n");
+        return 0;
     }
-    while((c = fgetc(arquivo)) != EOF){
-        printf("Caractere lido: %c\n", c);
-        if(c != ' '){
-            auxC++;
-        }
+
+    while(0)){
+
     }
-    printf("QUANTIDADE DE CARACTERES: %d", auxC);
 
 
-    if((c == EOF) && (feof(arquivo) == 0) && (ferror(arquivo) != 0))
-        perror("Erro: fgetc");
 
+
+
+
+%[^\n]s
 
     fclose(arquivo);
-
 
 }
