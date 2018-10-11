@@ -15,5 +15,3 @@ No *adicionarNoNodo(No *n,char *ch, int linha);
 
 
 #endif // LISTA_H_
-
-printf("%d | %d",indice,x[indice]);
