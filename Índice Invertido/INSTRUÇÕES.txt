@@ -1,0 +1,12 @@
+(O trabalho foi feito na IDE CodeBlocks)
+
+Para testar o seu arquivo de texto, professor, basta renomear
+o seu arquivo de teste para "teste". O arquivo txt que já possui
+esse nome aqui nesta pasta é o meu arquivo de teste. Pode apagá-lo
+se achar necessário, mas o arquivo que o senhor for usar, precisa
+estar nesta pasta, pois dentro da codificação do trabalho, estamos
+usando apenas o nome do arquivo, logo o programa irá procurar o
+arquivo para abrir onde estiver o arquivo ponto main.c;
+
+Att
+Tarlison Sander e Luigi Muller.
