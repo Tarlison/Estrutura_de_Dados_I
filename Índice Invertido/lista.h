@@ -1,17 +1,18 @@
 #ifndef LISTA_H_
 #define LISTA_H_
-
 typedef struct nodo{
-    char palavra[500]; //uma palavra fica aqui
-    int indices[500]; //aqui fica as linhas e o numero de vezes que se repetiu em cada linha
-    struct nodo *prox;
+    char palavra[3000];
+    int indice[300];
+    struct lista* prox;
 }No;
 
-
-
-No *cria_no();
-No *adicionarNoNodo(No *n,char *ch, int linha);
-
-
+No *cria_no(void);
+No *insere_no(No *l, char *str, int linha);
+No *conflito_no(No *l, char *str, int linha);
+No *retira_no(Lista* l, char *s);
+int no_vazio(No *l);
+int no_busca(No *l, char *str);
+void imprimir_no(No *l, int linha);
+void liberar_no(No *l);
 
 #endif // LISTA_H_
