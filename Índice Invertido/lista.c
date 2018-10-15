@@ -29,11 +29,11 @@ No *conflito_no(No *l, char *str, int linha){
         aux->indice[linha]++;
 }
 
-No *retira_no(Lista* l, char *str){
+No *retira_no(No *l, char *str){
     No *ant = NULL;
     No *p = l;
 
-    while(p != NULL && strcmp(p->prox,str) != 0){
+    while(p != NULL && strcmp(p->palavra,str) != 0){
         ant = p;
         p = p->prox;
     }

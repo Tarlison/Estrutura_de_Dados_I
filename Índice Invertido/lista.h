@@ -9,7 +9,7 @@ typedef struct nodo{
 No *cria_no(void);
 No *insere_no(No *l, char *str, int linha);
 No *conflito_no(No *l, char *str, int linha);
-No *retira_no(Lista* l, char *str);
+No *retira_no(No *l, char *str);
 int no_vazio(No *l);
 int no_busca(No *l, char *str);
 void imprimir_no(No *l, int linha);
