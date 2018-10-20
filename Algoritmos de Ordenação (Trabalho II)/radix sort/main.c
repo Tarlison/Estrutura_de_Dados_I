@@ -22,6 +22,7 @@ void radixsort(int vetor[], int tamanho) {
     	for (i = 0; i < tamanho; i++)
     	    vetor[i] = b[i];
     	exp *= 10;
+    	for()
     }
     free(b);
 }
@@ -30,6 +31,5 @@ void radixsort(int vetor[], int tamanho) {
 int main(){
     int cont, tamanho;
     srand(time(NULL));
-    printf("Hello world!\n");
     return 0;
 }
