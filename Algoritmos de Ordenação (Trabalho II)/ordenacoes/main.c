@@ -4,10 +4,10 @@
 #include "gerador.h"
 
 int main(){
-    int opcao = 1;
+    int opcao = 1,cont;
     int * entrada = (int*) malloc(sizeof(int)*100010);
     int * saida = (int*) malloc(sizeof(int)*100010);
-    FILE * arqEnt;
+    FILE * arqEnt = NULL;
     srand(time(NULL));
     while(opcao != 0){
         printf("======PROJETO ORDENACAO======\n");
@@ -33,6 +33,13 @@ int main(){
             fclose(arqEnt);
             break;
         case 2:
+            arqEnt = fopen("original_100.txt", "r");
+            printf("Lendo o arquivo de 100 elementos\n");
+            preenche_vetor(arqEnt, entrada);
+            for(cont = 0; cont < 100; cont++){//apagar essas linhas depois
+                printf("[%d] ", entrada[cont]);
+            } printf("\n");
+            fclose(arqEnt);
             break;
         }
     }
