@@ -24,3 +24,10 @@ void preenche_vetor(FILE * arq, int * vet){
         printf("O arquivo nao pode ser lido\n");
     }
 }
+
+void preenche_arq_saida(FILE * saida, int * vetor, int tamanho){
+    int cont;
+    for(cont = 0; cont < tamanho; cont++){
+        fprintf(saida, "%d\n", vetor[cont]);
+    }
+}
