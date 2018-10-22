@@ -73,6 +73,30 @@ int main(){
                 } else {
                     printf("Arquivo ordenado insertion de 100 elem. nao foi gerado\n");
                 }
+
+                transf_entrada_to_saida(entrada, saida, 100);
+                quickSort(saida, 0, 99);
+                imprimir_ordenacao("Quick Sort", saida, 100);
+                arqSai = fopen("saida_100_quick.txt","w");
+                if(arqSai != NULL){
+                    preenche_arq_saida(arqSai, saida, 100);
+                    printf("Arquivo ordenado quick de 100 elem. gerado\n");
+                    fclose(arqSai);//preenche o arquivo para essa ordenação
+                } else {
+                    printf("Arquivo ordenado quick de 100 elem. nao foi gerado\n");
+                }
+
+                transf_entrada_to_saida(entrada, saida, 100);
+                merge_sort(saida, 0, 99);
+                imprimir_ordenacao("Merge Sort", saida, 100);
+                arqSai = fopen("saida_100_merge.txt","w");
+                if(arqSai != NULL){
+                    preenche_arq_saida(arqSai, saida, 100);
+                    printf("Arquivo ordenado merge de 100 elem. gerado\n");
+                    fclose(arqSai);//preenche o arquivo para essa ordenação
+                } else {
+                    printf("Arquivo ordenado merge de 100 elem. nao foi gerado\n");
+                }
                 /*for(cont = 0; cont < 100; cont++){//apagar essas linhas depois
                     printf("[%d] ", saida[cont]);
                 } printf("\n");*/

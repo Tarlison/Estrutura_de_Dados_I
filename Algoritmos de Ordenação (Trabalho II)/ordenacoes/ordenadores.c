@@ -91,3 +91,73 @@ void radix_sort(int * entrada, int * saida, int tamanho) {
     free(b);
     imprimir_ordenacao("Radix Sort", saida, tamanho);
 }
+
+int partition_( int *vetorDesordenado, int posicaoInicio, int posicaoFim ){
+   int x,i,j,auxiliar;
+   x = vetorDesordenado[posicaoInicio];
+   i = posicaoInicio - 1;
+   j = posicaoFim + 1;
+   for(;;){
+      do { j--; } while( vetorDesordenado[j] > x );
+      do { i++; } while( vetorDesordenado[i] < x );
+
+      if (i < j){
+         auxiliar = vetorDesordenado[i];
+         vetorDesordenado[i] = vetorDesordenado[j];
+         vetorDesordenado[j] = auxiliar;
+      } else {
+         return j;
+      }
+   }
+}
+void quickSort( int *vetorDesordenado, int posicaoInicio, int posicaoFim ){
+   int pivot;
+   if (posicaoInicio < posicaoFim){
+      pivot = partition_( vetorDesordenado, posicaoInicio, posicaoFim);
+      quickSort( vetorDesordenado, posicaoInicio, pivot);
+      quickSort(vetorDesordenado, pivot+1, posicaoFim);
+   }
+}
+
+void merge_sort( int *vetorDesorndeado, int posicaoInicio, int posicaoFim ) {
+   int i,j,k,metadeTamanho,*vetorTemp;
+   if ( posicaoInicio == posicaoFim ) return;
+   metadeTamanho = ( posicaoInicio+posicaoFim )/2;
+   merge_sort( vetorDesorndeado, posicaoInicio, metadeTamanho);
+   merge_sort( vetorDesorndeado, metadeTamanho+1,posicaoFim );
+   i = posicaoInicio;
+   j = metadeTamanho+1;
+   k = 0;
+   vetorTemp = (int *) malloc(sizeof(int) * (posicaoFim-posicaoInicio+1));
+
+   while( i < metadeTamanho+1 || j  < posicaoFim+1 ){
+      if ( i == metadeTamanho+1 ){
+ 	vetorTemp[k] = vetorDesorndeado[j];
+         j++;
+         k++;
+      }
+      else{
+         if (j==posicaoFim+1) {
+            vetorTemp[k] = vetorDesorndeado[i];
+            i++;
+            k++;
+         }
+         else {
+            if (vetorDesorndeado[i] < vetorDesorndeado[j]) {
+               vetorTemp[k] = vetorDesorndeado[i];
+               i++;
+               k++;
+            }
+            else{
+              vetorTemp[k] = vetorDesorndeado[j];
+              j++;
+              k++;
+            }
+         }
+      }
+   }
+   for( i = posicaoInicio; i <= posicaoFim; i++ ){
+      vetorDesorndeado[i] = vetorTemp[i-posicaoInicio];
+   }
+   free(vetorTemp);
+}
