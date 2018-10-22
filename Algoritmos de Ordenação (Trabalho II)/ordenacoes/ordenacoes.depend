@@ -1,16 +1,25 @@
 # depslib dependency file v1.0
-1540095370 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\gerador.c
+1540152928 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\gerador.c
 	<stdio.h>
 	<stdlib.h>
 	"gerador.h"
 
-1540094234 c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\gerador.h
+1540157635 c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\gerador.h
 
-1540095434 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\main.c
+1540183705 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"gerador.h"
+	"ordenadores.h"
 
-1540093752 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.c
+1540180079 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.c
+	"ordenadores.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1540179626 c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.h
+
+1540181659 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\buscadores.c
 

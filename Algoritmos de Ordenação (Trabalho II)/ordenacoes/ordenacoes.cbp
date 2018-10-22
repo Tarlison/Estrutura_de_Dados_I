@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="buscadores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="buscadores.h" />
 		<Unit filename="gerador.c">
 			<Option compilerVar="CC" />
 		</Unit>
