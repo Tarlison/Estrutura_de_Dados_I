@@ -5,7 +5,7 @@
 #include "ordenadores.h"
 
 int main(){
-    int opcao = 1;
+    int opcao = 1, cont;
     long long int comparacoes = 0;
     int * entrada = (int*) malloc(sizeof(int)*100010);
     int * saida = (int*) malloc(sizeof(int)*100010);
@@ -17,6 +17,7 @@ int main(){
         printf("======PROJETO ORDENACAO======\n");
         printf("1 - Gerar Arquivos\n");
         printf("2 - Ordenar Arquivos\n");
+        printf("3 - buscar elementos\n");
         printf("0 - Sair\n");
         printf("Opcao: ");
         scanf("%d", &opcao);
@@ -359,8 +360,43 @@ int main(){
             } else {
                 printf("Arquivo de 100000 nao foi lido\n");
             }
-
             break;
+        case 3:
+            for(cont = 0; cont < 10000;cont++){
+                entrada[cont] = rand()%10000;
+            }
+            arqEnt = fopen("saida_100000_selection.txt", "r");
+            if(arqEnt != NULL){
+                printf("Arquivo foi aberto para pesquisa binaria\n");
+                for(cont = 0; cont < 100000;cont++){
+                    fscanf(arqEnt,"%d", &saida[cont]);
+                }
+                fclose(arqEnt);
+                tempo = clock();
+                for(cont = 0; cont < 10000; cont++){
+                    pesquisa_binaria(entrada, saida[cont], 100000);
+                }
+                tempo = clock() - tempo;
+                printf("Tempo na pesquisa binaria no vetor de 100.000 elementos: %lf seg\n", ((double)tempo)/CLOCKS_PER_SEC);
+            } else {
+                printf("Arquivo nao pode ser aberto para pesquisa binaria\n");
+            }
+            arqEnt = fopen("original_100000.txt", "r");
+            if(arqEnt != NULL){
+                printf("Arquivo foi aberto para busca sequencial\n");
+                for(cont = 0; cont < 100000;cont++){
+                    fscanf(arqEnt,"%d", &saida[cont]);
+                }
+                fclose(arqEnt);
+                tempo = clock();
+                for(cont = 0; cont < 10000; cont++){
+                    buscaSequencial(entrada, saida[cont], 100000);
+                }
+                tempo = clock() - tempo;
+                printf("Tempo na busca sequecial no vetor de 100.000 elementos: %lf seg\n", ((double)tempo)/CLOCKS_PER_SEC);
+            } else {
+                printf("Arquivo nao pode ser aberto para busca sequencial\n");
+            }
         }
     }
     return 0;
