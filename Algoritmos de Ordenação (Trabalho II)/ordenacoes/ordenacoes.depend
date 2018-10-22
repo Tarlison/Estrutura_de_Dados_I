@@ -6,16 +6,18 @@
 
 1540157635 c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\gerador.h
 
-1540158466 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\main.c
+1540179626 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"gerador.h"
 	"ordenadores.h"
 
-1540152888 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.c
+1540176361 source:c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.c
 	"ordenadores.h"
 	<stdio.h>
+	<stdlib.h>
+	<time.h>
 
-1540160614 c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.h
+1540179626 c:\users\luigi muller\documents\curso ciências da computação\estrutura de dados i - dcc302\trabalho final\estrutura_de_dados_i\algoritmos de ordenação (trabalho ii)\ordenacoes\ordenadores.h
 
