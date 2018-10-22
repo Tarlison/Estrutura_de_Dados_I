@@ -4,7 +4,7 @@
 #define TAMANHO 10
 
 void radixsort(int vetor[], int tamanho) {
-    int i, *b, exp = 1, cont;
+    int i, *b, exp = 1, cont, cont2;
     int maior = vetor[0];
     b = (int *)calloc(tamanho, sizeof(int));
     for (i = 0; i < tamanho; i++) {
@@ -22,6 +22,11 @@ void radixsort(int vetor[], int tamanho) {
     	    [2,2,3,1,2,3,1,3,0,2]*/
     	for (i = tamanho - 1; i >= 0; i--){
     	    b[--bucket[(vetor[i] / exp) % 10]] = vetor[i];
+    	    printf("bucket: ");
+    	    for(cont = 0; cont < 10; cont++){
+                printf("[%d]", bucket[cont]);
+    	    }
+    	    printf("\n");
     	    for(cont = 0; cont < tamanho; cont++){
                 printf("[%3d] ", b[cont]);
             }
