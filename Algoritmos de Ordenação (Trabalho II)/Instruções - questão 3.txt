@@ -1,0 +1,4 @@
+O arquivo está no diretório:
+Ordenações - questão 3/bin/Debug/ordenacoes.exe
+
+O menu principal já mostra as instrucoes para trabalhar nele
